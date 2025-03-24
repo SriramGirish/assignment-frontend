@@ -53,10 +53,7 @@
   
   /* Home container styles */
   .homeCon {
-    background-image: url('https://img.freepik.com/free-photo/galaxy-night-panorama_23-2148895325.jpg?t=st=1742814498~exp=1742818098~hmac=9734d7b22f0f780c732e59355e212447271035c1b4a90284ef462ab84b0b9d4e&w=1380');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: black;
     min-height: 100vh;
     color: var(--text-color);
     display: flex;
