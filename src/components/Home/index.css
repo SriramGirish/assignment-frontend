@@ -1,0 +1,234 @@
+/* Base styles */
+:root {
+    --primary-font: 'Courier New', Courier, monospace;
+    --secondary-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --text-color: white;
+    --mobile-padding: 20px;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .logoCon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    width: 40px;
+    margin-right: 10px;
+  }
+  
+  .name {
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+  }
+  
+  .linksCon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .link, .logoutBtn {
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 5px 0;
+    margin-right: 20px;
+  }
+  
+  /* Home container styles */
+  .homeCon {
+    background-image: url('https://img.freepik.com/free-photo/galaxy-night-panorama_23-2148895325.jpg?t=st=1742814498~exp=1742818098~hmac=9734d7b22f0f780c732e59355e212447271035c1b4a90284ef462ab84b0b9d4e&w=1380');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    padding: var(--mobile-padding);
+  }
+  
+  .heading {
+    margin-top: 50px;
+    font-size: 2.5rem;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    padding-bottom: 0;
+  }
+  
+  .para {
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    color: var(--text-color);
+    font-size: 1rem;
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    background-color: transparent;
+    align-self: flex-start;
+    width: 150px;
+    padding: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .link:hover{
+    text-decoration: underline;
+  }
+
+  .logoutBtn:hover{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 4px;
+  }
+  
+  /* Media Queries for responsiveness */
+  
+  /* Tablets and small laptops (768px and up) */
+  @media (min-width: 768px) {
+    .header {
+      padding: 20px;
+    }
+    
+    .name {
+      font-size: 1.8rem;
+    }
+    
+    .link, .logoutBtn {
+      font-size: 1.2rem;
+    }
+    
+    .heading {
+      font-size: 3.5rem;
+      margin-top: 80px;
+    }
+    
+    .para {
+      font-size: 2rem;
+    }
+    
+    .btn {
+      font-size: 1.2rem;
+      padding: 12px;
+      margin-top: 60px;
+    }
+  }
+  
+  /* Large laptops and desktops (1024px and up) */
+  @media (min-width: 1024px) {
+    .header {
+      padding: 20px 40px;
+    }
+    
+    .homeCon {
+      padding: 40px;
+      height: 130vh;
+    }
+    
+    .heading {
+      font-size: 4rem;
+      margin-top: 100px;
+      padding: 0 50px;
+    }
+    
+    .para {
+      font-size: 2.2rem;
+      padding-left: 50px;
+    }
+    
+    .btn {
+      margin-left: 50px;
+    }
+  }
+  
+  /* Extra large screens (1440px and up) */
+  @media (min-width: 1440px) {
+    .heading {
+      font-size: 5rem;
+    }
+    
+    .para {
+      font-size: 2.5rem;
+    }
+  }
+  
+  /* Mobile devices (600px and below) */
+  @media (max-width: 600px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .linksCon {
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+    
+    .link, .logoutBtn {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    
+    .heading {
+      font-size: 2rem;
+      margin-top: 30px;
+    }
+    
+    .para {
+      font-size: 1.2rem;
+    }
+    
+    .btn {
+      width: 120px;
+      font-size: 0.9rem;
+      margin-top: 30px;
+    }
+  }
+  
+  /* Very small mobile devices (400px and below) */
+  @media (max-width: 400px) {
+    .heading {
+      font-size: 1.8rem;
+    }
+    
+    .para {
+      font-size: 1rem;
+    }
+    
+    .btn {
+      width: 100px;
+      font-size: 0.8rem;
+    }
+  }
+
+  .globeCon{
+    display: flex;
+   
+    justify-content: space-between;
+  }

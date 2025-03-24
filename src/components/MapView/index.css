@@ -1,0 +1,28 @@
+.map-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.map-heading{
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;
+}
+
+.map-links-con{
+    display: flex;
+    margin-right: 20px;
+}
+
+.map-link{
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.map-link:hover{
+    text-decoration: underline;
+}
